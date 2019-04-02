@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkTop() {
+        let diemKT = parseFloat(prompt("nhập điểm kiểm tra"));
+        let diemGK = parseFloat(prompt("nhập điểm giữa kì"));
+        let diemTK = parseFloat(prompt("nhập điểm cuối kì"));
+        if (diemKT >= 9 && diemKT <= 10 && diemGK >= 9 && diemGK <= 10 && diemTK >= 9 && diemTK <= 10) {
+            alert("loại giỏi");
+        } else if (diemKT >= 8 && diemKT < 9 && diemGK >= 8 && diemGK < 9 && diemTK >= 8 && diemTK < 9) {
+            alert("loại khá")
+        } else if (diemKT >= 6.5 && diemKT < 8 && diemGK >= 6.5 && diemGK < 8 && diemTK >= 6.5 && diemTK < 8) {
+            alert("loại trung bình");
+        } else if (diemKT >= 5 && diemKT < 6.5 && diemGK >= 5 && diemGK < 6.5 && diemTK >= 5 && diemTK < 6.5) {
+            alert("loại yếu")
+        } else if (diemKT >= 0 && diemKT < 5 && diemGK >= 0 && diemGK < 5 && diemTK >= 0 && diemTK < 5) {
+            alert("loại kém")
+        } else {
+            alert("nhập lại")
+        }
+
+    }
+
+    checkTop();
+</script>
+</body>
+</html>

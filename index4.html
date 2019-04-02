@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkMax() {
+        let a = parseFloat(prompt("nhập a:"));
+        let b = parseFloat(prompt("nhập b:"));
+        let c = parseFloat(prompt("nhập c:"));
+        if (a > b && a > c) {
+            alert(a + ' là số lớn nhất');
+        } else if (b > a && b > c) {
+            alert(b + ' là số lớn nhất');
+        } else {
+            alert(c + ' là số lớn nhất');
+        }
+
+    }
+    checkMax();
+</script>
+</body>
+</html>

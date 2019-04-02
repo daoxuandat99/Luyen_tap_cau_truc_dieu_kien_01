@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check() {
+        let a = parseFloat(prompt('nhập số lượng sản phẩm được bàn giao'));
+        let b = parseFloat(prompt('nhập số lượng sản phẩm bán được'));
+        // giả sử doanh thu được tính theo công thức:số sản phẩm bán được / số lượng sản phẩm được bàn giao * 100%
+        let c = b / a * 100;
+        // nếu doanh số đạt được từ 70% tới 100%
+        // giả sử số tiền hoa hồng được tính theo công thức : doanh thu * 15% tổng doanh thu
+        let d = c * 15;
+        if (c >= 70 && c <= 100) {
+            alert('số hoa hồng nhận được là:' + d + 'VND');
+        } else if (c >= 40 && c < 70) {
+            alert('số hoa hồng nhận được là:' + d + 'VND');
+        } else if (c >= 10 && c < 40) {
+            alert('số hoa hồng nhận được là:' + d + 'VND');
+        } else if (c >= 0 && c < 10) {
+            alert('không có hoa hồng');
+
+        }
+
+    }
+
+    check();
+</script>
+</body>
+</html>
